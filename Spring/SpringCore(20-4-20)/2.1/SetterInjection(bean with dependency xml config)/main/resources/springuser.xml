@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans-3.0.xsd ">
+
+	<bean id="student"
+		class="com.virtusa.SetterInjection.bean.Student">
+		<property name="studentName" value="Damodar Reddy" />
+		<property name="studentRollNo" value="8072577" />
+		<property name="laptop" ref="laptop"></property>
+	</bean>
+	<bean id="laptop" class="com.virtusa.SetterInjection.bean.Laptop">
+		<property name="laptopId" value="101" />
+		<property name="laptopName" value="Lenovo" />
+		<property name="laptopRam" value="4Gb" />
+
+
+	</bean>
+</beans> 
